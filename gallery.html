@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hausman Barber shop</h1>
+   <header>
+    <div class="header-container">
+        <h1>Hausman Barber Shop</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,17 +20,50 @@
                 <li><a href="contact.html">Contact & Booking</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section>
-            <h2>Our Work Gallery</h2>
-            <figure>
-<img src="assets/cut.png" alt="Classic Haircut at Hausman Barber Shop" width="400">
-                <figcaption>Classic Haircut & Precision Fade</figcaption>
-            </figure>
-        </section>
-    </main>
+  <main>
+  <section>
+    <h2>Our Work Gallery</h2>
+    <div class="grid-container">
+      
+      <div class="card">
+        <figure>
+          <img src="assets/cut.png" alt="Classic Haircut at Hausman Barber Shop">
+          <figcaption>Classic Haircut & Precision Fade</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="assets/images.jpg" alt="Beard Trim & Hot Towel Shave at Hausman Barber Shop">
+          <figcaption>Beard Trim & Hot Towel Shave</figcaption>
+        </figure>
+      </div>
+
+      <!-- This is a video representation -->
+      <div class="card">
+        <figure>
+          <video controls width="100%">
+            <source src="assets/instagram_1790727897764(720p).mp4">
+          </video>
+          <figcaption>Designs & Hausman Initiation</figcaption>
+        </figure>
+      </div>
+
+      <!-- This is also a video representation, which is the second video -->
+      <div class="card">
+        <figure>
+          <video controls width="100%">
+            <source src="assets/instagram_1790727919614(720p).mp4">
+          </video>
+          <figcaption>Kids Haircut Trim - Eriku Business Center</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
 
     <footer>
         <p>&copy; 2026 Hausman Barber Shop. All rights reserved.</p>

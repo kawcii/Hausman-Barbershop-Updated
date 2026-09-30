@@ -1,88 +1,230 @@
-/* Basic styling for readability and clean layout */
+/*  CSS VARIABLES (Design System: Colors, Typography, Spacing) */
+:root {
+    /* Color Palette for the website */
+    --primary-color: #1a252f;
+    --secondary-color: #2c3e50;
+    --accent-color: #2980b9;
+    --accent-hover: #3498db;
+    --text-dark: #2c3e50;
+    --text-light: #ffffff;
+    --bg-light: #f8f9fa;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+
+    /* Typography of different state of text, if one isnt applicable */
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-heading: 'Georgia', serif;
+    --base-font-size: 1rem;
+
+    /* Spacing & Borders */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --border-radius: 8px;
+    --transition-speed: 0.3s ease;
+}
+
+/* BASE & the RESET STYLES */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-main);
+    font-size: var(--base-font-size);
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
 }
 
+/* Accessible Focus State of initial action */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Responsive Media setting */
+img, picture, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*HEADER & NAVIGATION  */
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: var(--spacing-xs) 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--text-light);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
 }
 
+header nav ul li a:hover,
+header nav ul li a:active {
+    background-color: var(--accent-color);
+}
+
+/* LAYOUT CONTAINERS & GRID COMPONENTS*/
 main {
-    padding: 20px;
-    max-width: 900px;
+    padding: var(--spacing-md);
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-section, article, aside {
-    margin-bottom: 20px;
+/* Modern CSS Grid Layout for Cards/Panels */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
 
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*TABLES & FORMS*/
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin: var(--spacing-md) 0;
+    background-color: var(--bg-card);
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
 }
 
 th, td {
-    padding: 10px;
+    padding: var(--spacing-sm);
     text-align: left;
 }
 
 th {
-    background-color: #f4f4f4;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+form {
+    background-color: var(--bg-card);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
 }
 
 form label {
     display: block;
-    margin-top: 10px;
+    margin-top: var(--spacing-sm);
+    font-weight: 600;
 }
 
-form input, form select, form button {
+form input, form select, form textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: inherit;
 }
 
-form button {
-    background-color: #222;
-    color: white;
+form button, .btn {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--text-light);
     border: none;
-    margin-top: 15px;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    font-weight: bold;
+    border-radius: var(--border-radius);
     cursor: pointer;
+    transition: background-color var(--transition-speed);
 }
 
+form button:hover, .btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* representation of the FOOTER*/
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-light);
     text-align: center;
-    padding: 10px;
-    margin-top: 30px;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+/*less MEDIA QUERIES*/
+
+/* Tablet Viewport (768px and up) */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form button, .btn {
+        width: auto;
+    }
+}
+
+/* this is the Desktop Viewport (1024px and up) */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
 }

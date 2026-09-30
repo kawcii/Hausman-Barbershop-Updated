@@ -1,6 +1,6 @@
 # Hausman Barber Shop Website
 
-This is a website basic html and css structure, its nothing extraordianry, but just something simple that like, represents the simple things provided in the business, of the IS229 Web Design assessment (A2) 
+This is a website basic html and css structure, its nothing extraordianry, but just something simple that like, represents the simple things provided in the business, of the IS229 Web Design assessment (A3) which is just updated only, only few changes to the html files and, mainly css for many key updaets.
 
 ## Project Details
 - Course: IS229 - Web Design (Basic website)
@@ -21,6 +21,6 @@ All the pages were checked using nu html checker, and it verified to be free of 
 ## AI Use Declaration
 AI tools (Gemini) were used during this project for guidance on project structure, basic CSS styling, and HTML starter scaffolding. All final implementation and testing were verified on, own idea.
 
-GitHub Repository URL: [https://github.com/kawcii/Hausman-Barber-website](https://github.com/kawcii/Hausman-Barber-website)
+GitHub Repository URL: 
 
-Published Website URL: [https://kawcii.github.io/Hausman-Barber-website/](https://kawcii.github.io/Hausman-Barber-website/)
+Published Website URL: 
