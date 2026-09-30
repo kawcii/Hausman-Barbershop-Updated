@@ -21,6 +21,6 @@ All the pages were checked using nu html checker, and it verified to be free of 
 ## AI Use Declaration
 AI tools (Gemini) were used during this project for guidance on project structure, basic CSS styling, and HTML starter scaffolding. All final implementation and testing were verified on, own idea.
 
-GitHub Repository URL: 
+GitHub Repository URL: https://github.com/kawcii/Hausman-Barbershop-Updated.git
 
-Published Website URL: 
+Published Website URL:  https://kawcii.github.io/Hausman-Barbershop-Updated/
