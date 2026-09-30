@@ -1,6 +1,6 @@
 # Hausman Barber Shop Website
 
-This is a website basic html and css structure, its nothing extraordianry, but just something simple that like, represents the simple things provided in the business, of the IS229 Web Design assessment (A3) which is just updated only, only few changes to the html files and, mainly css for many key updaets.
+This is a website basic html and css structure, its nothing extraordianry, but just something simple that like, represents the simple things provided in the business, of the IS229 Web Design assessment (A3) which is just updated only, only few changes to the html files and, mainly css for many key updaets. Also for the booking it doesn't have a backend to like process that booking.
 
 ## Project Details
 - Course: IS229 - Web Design (Basic website)
