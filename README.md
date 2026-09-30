@@ -5,7 +5,7 @@ This is a website basic html and css structure, its nothing extraordianry, but j
 ## Project Details
 - Course: IS229 - Web Design (Basic website)
 - Technologies Used: HTML5, Basic CSS3, Git, GitHub, GitHub Pages
-- Live Website:
+- Live Website:https://kawcii.github.io/Hausman-Barbershop-Updated/
 - GitHub Repository:https://github.com/kawcii/Hausman-Barbershop-Updated.git
 
 ## Website Pages
