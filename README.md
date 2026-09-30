@@ -5,8 +5,8 @@ This is a website basic html and css structure, its nothing extraordianry, but j
 ## Project Details
 - Course: IS229 - Web Design (Basic website)
 - Technologies Used: HTML5, Basic CSS3, Git, GitHub, GitHub Pages
-- Live Website:https://kawcii.github.io/Hausman-Barber-website/
-- GitHub Repository:https://github.com/kawcii/Hausman-Barber-website
+- Live Website:
+- GitHub Repository:https://github.com/kawcii/Hausman-Barbershop-Updated.git
 
 ## Website Pages
 1. `index.html` - Home page showing branding and features.
